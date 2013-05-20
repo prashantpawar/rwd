@@ -61,11 +61,34 @@
 				font-style: italic;
 				padding: 10px;
 			}
-			.bg-test-1 {
-				background-color:green;
+			ul {
+				list-style:none;
 			}
-			.bg-test-2 {
-				background-color:orange;
+			#fs-main-nav nav {
+				margin-top: 23px;
+			}
+			#fs-main-nav nav .taste {
+				background: url("assets/icons/nav-tastemakers.png") no-repeat 0 10px;
+			}
+			#fs-main-nav nav .blog {
+				background: url("assets/icons/nav-blog.png") no-repeat 0 10px;
+			}
+			#fs-main-nav nav .alist {
+				background: url("assets/icons/nav-alist.png") no-repeat 0 10px;
+			}
+			#fs-main-nav nav .contrib {
+				background: url("assets/icons/nav-contribute.png") no-repeat 0 10px;
+			}
+			#fs-main-nav nav .about {
+				background: url("assets/icons/nav-about.png") no-repeat 0 10px;
+			}
+
+			#fs-main-nav li a {
+				color:#2333aa;
+				text-decoration:none;
+				font-style:italic;
+				padding: 20px 0px 12px 42px;
+				display: block;
 			}
 			@media only screen and (max-width : 960px) {
 				#fs-main-nav {
@@ -75,7 +98,7 @@
 					width:100%;	
 				}
 			}
-			@media only screen and (max-width : 480px) {
+			@media only screen and (max-width : 600px) {
 				body {
 					padding-top:0px;
 				}
@@ -110,7 +133,15 @@
 		<div id="fs">
 			<section id="fs-main-nav">
 				<h1>food sense</h1>
-				nav
+				<nav>
+					<ul>
+						<li class="taste"><a href="">Tastemakers</a></li>
+						<li class="blog"><a href="">Blog</a></li>
+						<li class="alist"><a href="">The-A-List</a></li>
+						<li class="contrib"><a href="">Contribute</a></li>
+						<li class="about"><a href="">About</a></li>
+					</ul>
+				</nav>
 			</section>
 			<section id="fs-header">
 				<img src="assets/photos/cupcakes.jpg" />
