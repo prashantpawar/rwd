@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+
+			* {
+				margin:0px;
+				padding:0px;
+			}
+
+			body {
+				padding-top:50px;
+				padding-left:50px;
+				padding-right:50px;
+			}
+
+			#fs-main-nav {
+				width:20%;
+				float:left;
+				padding-right:5%;
+			}
+			#fs-main-nav h1 {
+				text-indent:-9999px;
+				background: url('assets/food-sense.png') no-repeat 0 0;
+				width: 120px;
+				height: 120px;
+			}
+			#fs-header {
+				position:relative;
+				width:75%;
+				float:left;
+			}
+			#fs-header img {
+				max-width:100%;
+				float:right;
+			}
+			.tagline-wrap {
+				position:absolute;
+				top:61%;
+				right:0px;
+				clear:both;
+			}
+			.tagline-1 {
+				background-color:#fff;
+				color:#000;
+				font-style: italic;
+				font-size: 1.3em;
+				padding: 10px;
+				padding: 10px 26px;
+				float:right;
+			}
+			#fs-header .tagline-2 {
+				clear:both;
+				background-color:#000;
+				color: #fff;
+				font-style: italic;
+				padding: 10px;
+			}
+			.bg-test-1 {
+				background-color:green;
+			}
+			.bg-test-2 {
+				background-color:orange;
+			}
+			@media only screen and (max-width : 768px) {
+				body {
+					padding-top:0px;
+				}
+				#fs-main-nav {
+					width:100%;
+				}
+				#fs-main-nav h1 {
+					background: url('assets/food-sense.png') no-repeat -1px -121px;
+					width: 238px;
+					height: 238px;
+				}
+				#fs-header {
+					width:100%;	
+				}
+				.tagline-wrap {
+					position:static;
+				}
+				.tagline-1 {
+					float:none;
+					padding:10px;
+				}
+
+			}
+
+			* {
+				outline:1px solid red;
+			}
+
+		</style>
+	</head>
+	<body>
+		<section id="fs-main-nav">
+			<h1>food sense</h1>
+			nav
+		</section>
+		<section id="fs-header">
+			<img src="assets/photos/cupcakes.jpg" />
+			<div class="tagline-wrap">
+				<div class="tagline-1">Shop for the Best</div>
+				<div class="tagline-2">With our carefully curated vendor list, you'll know what to buy.</div>
+			</div>
+			
+		</section>
+	</body>
+</html>
