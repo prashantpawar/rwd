@@ -20,7 +20,7 @@
 			}
 
 			#fs-main-nav {
-				width:30%;
+				width:15%;
 				float:left;
 				nopadding-right:2%;
 			}
@@ -32,7 +32,7 @@
 			}
 			#fs-header {
 				position:relative;
-				width:70%;
+				width:85%;
 				float:left;
 			}
 			#fs-header img {
@@ -67,20 +67,23 @@
 			.bg-test-2 {
 				background-color:orange;
 			}
-			@media only screen and (max-width : 768px) {
-				body {
-					padding-top:0px;
-				}
+			@media only screen and (max-width : 960px) {
 				#fs-main-nav {
 					width:100%;
 				}
+				#fs-header {
+					width:100%;	
+				}
+			}
+			@media only screen and (max-width : 480px) {
+				body {
+					padding-top:0px;
+				}
+				
 				#fs-main-nav h1 {
 					background: url('assets/food-sense.png') no-repeat -1px -121px;
 					width: 238px;
 					height: 238px;
-				}
-				#fs-header {
-					width:100%;	
 				}
 				.tagline-wrap {
 					position:static;
@@ -101,6 +104,7 @@
 			}
 
 		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<div id="fs">
@@ -119,5 +123,12 @@
 			<div class="clearFixDiv">
 			</div>
 		</div>
+		<div id="resizer"></div>
+		<script>
+			$(window).resize(function(){
+				$('#resizer').html($(window).width());	
+			});
+			
+		</script>
 	</body>
 </html>
