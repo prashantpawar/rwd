@@ -1,0 +1,174 @@
+/* line 1, ../sass/main.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 6, ../sass/main.scss */
+body {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* line 12, ../sass/main.scss */
+#fs {
+  max-width: 960px;
+  margin: 0px auto;
+}
+
+/* line 17, ../sass/main.scss */
+#fs-main-nav {
+  width: 15%;
+  float: left;
+  nopadding-right: 2%;
+}
+
+/* line 22, ../sass/main.scss */
+#fs-main-nav h1 {
+  text-indent: -9999px;
+  background: url("../assets/food-sense.png") no-repeat 0 0;
+  width: 120px;
+  height: 120px;
+}
+
+/* line 28, ../sass/main.scss */
+#fs-header {
+  position: relative;
+  width: 85%;
+  float: left;
+}
+
+/* line 33, ../sass/main.scss */
+#fs-header img {
+  max-width: 100%;
+  float: right;
+}
+
+/* line 37, ../sass/main.scss */
+.tagline-wrap {
+  position: absolute;
+  top: 61%;
+  right: 0px;
+  clear: both;
+}
+
+/* line 43, ../sass/main.scss */
+.tagline-1 {
+  background-color: #fff;
+  color: #000;
+  font-style: italic;
+  font-size: 1.3em;
+  padding: 10px;
+  padding: 10px 26px;
+  float: right;
+}
+
+/* line 52, ../sass/main.scss */
+#fs-header .tagline-2 {
+  clear: both;
+  background-color: #000;
+  color: #fff;
+  font-style: italic;
+  padding: 10px;
+}
+
+/* line 59, ../sass/main.scss */
+ul {
+  list-style: none;
+}
+
+/* line 62, ../sass/main.scss */
+#fs-main-nav nav {
+  margin-top: 23px;
+}
+
+/* line 65, ../sass/main.scss */
+#fs-main-nav nav .taste {
+  background: url("../assets/icons/nav-tastemakers.png") no-repeat 0 10px;
+}
+
+/* line 68, ../sass/main.scss */
+#fs-main-nav nav .blog {
+  background: url("../assets/icons/nav-blog.png") no-repeat 0 10px;
+}
+
+/* line 71, ../sass/main.scss */
+#fs-main-nav nav .alist {
+  background: url("../assets/icons/nav-alist.png") no-repeat 0 10px;
+}
+
+/* line 74, ../sass/main.scss */
+#fs-main-nav nav .contrib {
+  background: url("../assets/icons/nav-contribute.png") no-repeat 0 10px;
+}
+
+/* line 77, ../sass/main.scss */
+#fs-main-nav nav .about {
+  background: url("../assets/icons/nav-about.png") no-repeat 0 10px;
+}
+
+/* line 81, ../sass/main.scss */
+#fs-main-nav li a {
+  color: #2333aa;
+  text-decoration: none;
+  font-style: italic;
+  padding: 20px 0px 12px 42px;
+  display: block;
+}
+
+@media only screen and (max-width: 960px) {
+  /* line 89, ../sass/main.scss */
+  #fs-main-nav {
+    width: 100%;
+  }
+
+  /* line 92, ../sass/main.scss */
+  #fs-header {
+    width: 100%;
+  }
+
+  /* line 95, ../sass/main.scss */
+  #fs-main-nav h1 {
+    float: left;
+  }
+
+  /* line 98, ../sass/main.scss */
+  #fs-main-nav nav {
+    float: right;
+  }
+
+  /* line 101, ../sass/main.scss */
+  #fs-main-nav li {
+    float: left;
+    background-position: 50% 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 107, ../sass/main.scss */
+  body {
+    padding-top: 0px;
+  }
+
+  /* line 111, ../sass/main.scss */
+  #fs-main-nav h1 {
+    background: url("../assets/food-sense.png") no-repeat -1px -121px;
+    width: 238px;
+    height: 238px;
+  }
+
+  /* line 116, ../sass/main.scss */
+  .tagline-wrap {
+    position: static;
+  }
+
+  /* line 119, ../sass/main.scss */
+  .tagline-1 {
+    float: none;
+    padding: 10px;
+  }
+}
+/* line 126, ../sass/main.scss */
+.clearFixDiv {
+  clear: both;
+}

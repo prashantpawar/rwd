@@ -1,175 +1,40 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<style type="text/css">
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="fs">
+            <section id="fs-main-nav">
+            <h1>food sense</h1>
+            <nav>
+            <ul>
+                <li class="taste"><a href="">Tastemakers</a></li>
+                <li class="blog"><a href="">Blog</a></li>
+                <li class="alist"><a href="">The-A-List</a></li>
+                <li class="contrib"><a href="">Contribute</a></li>
+                <li class="about"><a href="">About</a></li>
+            </ul>
+            </nav>
+            </section>
+            <section id="fs-header">
+            <img src="assets/photos/cupcakes.jpg" />
+            <div class="tagline-wrap">
+                <div class="tagline-1">Shop for the Best</div>
+                <div class="tagline-2">With our carefully curated vendor list, you'll know what to buy.</div>
+            </div>
 
-			* {
-				margin:0px;
-				padding:0px;
-			}
+            </section>
+            <div class="clearFixDiv">
+            </div>
+        </div>
+        <div id="resizer"></div>
+        <script>
+            $(window).resize(function(){
+                //$('#resizer').html($(window).width());	
+            });
 
-			body {
-				padding-top:50px;
-				padding-left:50px;
-				padding-right:50px;
-			}
-
-			#fs {
-				max-width:960px;
-				margin:0px auto;
-			}
-
-			#fs-main-nav {
-				width:15%;
-				float:left;
-				nopadding-right:2%;
-			}
-			#fs-main-nav h1 {
-				text-indent:-9999px;
-				background: url('assets/food-sense.png') no-repeat 0 0;
-				width: 120px;
-				height: 120px;
-			}
-			#fs-header {
-				position:relative;
-				width:85%;
-				float:left;
-			}
-			#fs-header img {
-				max-width:100%;
-				float:right;
-			}
-			.tagline-wrap {
-				position:absolute;
-				top:61%;
-				right:0px;
-				clear:both;
-			}
-			.tagline-1 {
-				background-color:#fff;
-				color:#000;
-				font-style: italic;
-				font-size: 1.3em;
-				padding: 10px;
-				padding: 10px 26px;
-				float:right;
-			}
-			#fs-header .tagline-2 {
-				clear:both;
-				background-color:#000;
-				color: #fff;
-				font-style: italic;
-				padding: 10px;
-			}
-			ul {
-				list-style:none;
-			}
-			#fs-main-nav nav {
-				margin-top: 23px;
-			}
-			#fs-main-nav nav .taste {
-				background: url("assets/icons/nav-tastemakers.png") no-repeat 0 10px;
-			}
-			#fs-main-nav nav .blog {
-				background: url("assets/icons/nav-blog.png") no-repeat 0 10px;
-			}
-			#fs-main-nav nav .alist {
-				background: url("assets/icons/nav-alist.png") no-repeat 0 10px;
-			}
-			#fs-main-nav nav .contrib {
-				background: url("assets/icons/nav-contribute.png") no-repeat 0 10px;
-			}
-			#fs-main-nav nav .about {
-				background: url("assets/icons/nav-about.png") no-repeat 0 10px;
-			}
-
-			#fs-main-nav li a {
-				color:#2333aa;
-				text-decoration:none;
-				font-style:italic;
-				padding: 20px 0px 12px 42px;
-				display: block;
-			}
-			@media only screen and (max-width : 960px) {
-				#fs-main-nav {
-					width:100%;
-				}
-				#fs-header {
-					width:100%;	
-				}
-				#fs-main-nav h1 {
-					float:left;
-				}
-				#fs-main-nav nav {
-					float:right;
-				}
-				#fs-main-nav li {
-					float:left;
-					background-position: 50% 10px;
-				}
-			}
-			@media only screen and (max-width : 600px) {
-				body {
-					padding-top:0px;
-				}
-				
-				#fs-main-nav h1 {
-					background: url('assets/food-sense.png') no-repeat -1px -121px;
-					width: 238px;
-					height: 238px;
-				}
-				.tagline-wrap {
-					position:static;
-				}
-				.tagline-1 {
-					float:none;
-					padding:10px;
-				}
-
-			}
-
-			* {
-				outline:1px solid red;
-			}
-
-			.clearFixDiv {
-				clear:both;
-			}
-
-		</style>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-	</head>
-	<body>
-		<div id="fs">
-			<section id="fs-main-nav">
-				<h1>food sense</h1>
-				<nav>
-					<ul>
-						<li class="taste"><a href="">Tastemakers</a></li>
-						<li class="blog"><a href="">Blog</a></li>
-						<li class="alist"><a href="">The-A-List</a></li>
-						<li class="contrib"><a href="">Contribute</a></li>
-						<li class="about"><a href="">About</a></li>
-					</ul>
-				</nav>
-			</section>
-			<section id="fs-header">
-				<img src="assets/photos/cupcakes.jpg" />
-				<div class="tagline-wrap">
-					<div class="tagline-1">Shop for the Best</div>
-					<div class="tagline-2">With our carefully curated vendor list, you'll know what to buy.</div>
-				</div>
-				
-			</section>
-			<div class="clearFixDiv">
-			</div>
-		</div>
-		<div id="resizer"></div>
-		<script>
-			$(window).resize(function(){
-				//$('#resizer').html($(window).width());	
-			});
-			
-		</script>
-	</body>
+        </script>
+    </body>
 </html>
