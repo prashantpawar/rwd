@@ -90,7 +90,7 @@ ul {
         width:100%;
     }
     #fs-header {
-        width:100%;	
+        width:100%;     
     }
     #fs-main-nav h1 {
         float:left;
@@ -103,6 +103,7 @@ ul {
         background-position: 50% 10px;
     }
 }
+
 @media only screen and (max-width : 600px) {
     body {
         padding-top:0px;
@@ -120,11 +121,7 @@ ul {
         float:none;
         padding:10px;
     }
-
 }
-
 .clearFixDiv {
     clear:both;
 }
-
-

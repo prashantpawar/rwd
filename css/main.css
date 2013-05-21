@@ -145,30 +145,30 @@ ul {
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 107, ../sass/main.scss */
+  /* line 108, ../sass/main.scss */
   body {
     padding-top: 0px;
   }
 
-  /* line 111, ../sass/main.scss */
+  /* line 112, ../sass/main.scss */
   #fs-main-nav h1 {
     background: url("../assets/food-sense.png") no-repeat -1px -121px;
     width: 238px;
     height: 238px;
   }
 
-  /* line 116, ../sass/main.scss */
+  /* line 117, ../sass/main.scss */
   .tagline-wrap {
     position: static;
   }
 
-  /* line 119, ../sass/main.scss */
+  /* line 120, ../sass/main.scss */
   .tagline-1 {
     float: none;
     padding: 10px;
   }
 }
-/* line 126, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .clearFixDiv {
   clear: both;
 }
