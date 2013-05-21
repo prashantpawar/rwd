@@ -97,6 +97,16 @@
 				#fs-header {
 					width:100%;	
 				}
+				#fs-main-nav h1 {
+					float:left;
+				}
+				#fs-main-nav nav {
+					float:right;
+				}
+				#fs-main-nav li {
+					float:left;
+					background-position: 50% 10px;
+				}
 			}
 			@media only screen and (max-width : 600px) {
 				body {
@@ -157,7 +167,7 @@
 		<div id="resizer"></div>
 		<script>
 			$(window).resize(function(){
-				$('#resizer').html($(window).width());	
+				//$('#resizer').html($(window).width());	
 			});
 			
 		</script>
