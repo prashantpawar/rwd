@@ -58,6 +58,15 @@ module.exports = function(grunt) {
     qunit: {
       files: ['test/**/*.html']
     },
+    compass: {                  // Task
+        dist: {                   // Target
+            options: {              // Target options
+                sassDir: 'sass',
+                cssDir: 'css',
+                environment: 'production'
+            }
+        }
+    },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
