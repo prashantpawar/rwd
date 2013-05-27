@@ -17,19 +17,6 @@ module.exports = function(grunt) {
       options: {
         banner: '<%= banner %>',
         stripBanners: true
-      },
-      dist: {
-        src: ['lib/FILE_NAME.js'],
-        dest: 'dist/FILE_NAME.js'
-      }
-    },
-    uglify: {
-      options: {
-        banner: '<%= banner %>'
-      },
-      dist: {
-        src: '<%= concat.dist.dest %>',
-        dest: 'dist/FILE_NAME.min.js'
       }
     },
     jshint: {
@@ -69,18 +56,24 @@ module.exports = function(grunt) {
         files: '<%= jshint.gruntfile.src %>',
         tasks: ['jshint:gruntfile']
       },
+      options: {
+        livereload: true,
+      },
+      compass: {
+        files: 'sass/*.scss',
+        tasks: ['compass']
+      }
     }
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-livereload');
   grunt.loadNpmTasks('grunt-contrib-compass');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'compass', 'livereload']);
+  grunt.registerTask('default', ['jshint', 'concat', 'compass', 'livereload']);
 
 };
