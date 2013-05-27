@@ -1,9 +1,13 @@
+@import "theme.scss";
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic);
+
 * {
     margin:0px;
     padding:0px;
 }
 
 body {
+    font-family: $fonts;
     padding-top:50px;
     padding-left:50px;
     padding-right:50px;
@@ -59,30 +63,31 @@ body {
 ul {
     list-style:none;
 }
-#fs-main-nav nav {
-    margin-top: 23px;
-}
-#fs-main-nav nav .taste {
-    background: url("../assets/icons/nav-tastemakers.png") no-repeat 0 10px;
-}
-#fs-main-nav nav .blog {
-    background: url("../assets/icons/nav-blog.png") no-repeat 0 10px;
-}
-#fs-main-nav nav .alist {
-    background: url("../assets/icons/nav-alist.png") no-repeat 0 10px;
-}
-#fs-main-nav nav .contrib {
-    background: url("../assets/icons/nav-contribute.png") no-repeat 0 10px;
-}
-#fs-main-nav nav .about {
-    background: url("../assets/icons/nav-about.png") no-repeat 0 10px;
-}
-
-#fs-main-nav li a {
-    color:#2333aa;
-    text-decoration:none;
-    padding: 20px 0px 12px 42px;
-    display: block;
+#fs-main-nav {
+    nav {
+        margin-top: 23px;
+    }
+    nav .taste {
+        background: url("../assets/icons/nav-tastemakers.png") no-repeat 0 10px;
+    }
+    nav .blog {
+        background: url("../assets/icons/nav-blog.png") no-repeat 0 10px;
+    }
+    nav .alist {
+        background: url("../assets/icons/nav-alist.png") no-repeat 0 10px;
+    }
+    nav .contrib {
+        background: url("../assets/icons/nav-contribute.png") no-repeat 0 10px;
+    }
+    nav .about {
+        background: url("../assets/icons/nav-about.png") no-repeat 0 10px;
+    }
+    li a {
+        color:#6DB287;
+        text-decoration:none;
+        padding: 20px 0px 12px 42px;
+        display: block;
+    }
 }
 @media only screen and (max-width : 960px) {
     #fs-main-nav {
