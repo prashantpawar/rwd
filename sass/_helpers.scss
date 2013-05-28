@@ -1,0 +1,10 @@
+@mixin cols($num) {
+    width: ($one_col * $num) + ($gutter * ($num - 1));
+}
+
+@mixin sub_cols($num_child, $num_parent) {
+    $parent_size: ($one_cols * $num_parent) + ($gutter * ($num_parent - 1));
+    $child_size: ($one_cols * $num_child) + ($gutter * ($num_child - 1));
+    margin-left: ($gutter / $parent_size); * 100%;
+    width: ($child_size / $parent_size) * 100%;
+}
