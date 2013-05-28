@@ -4,29 +4,34 @@
         <link type="text/css" rel="stylesheet" href="css/theme.css" />
         <link type="text/css" rel="stylesheet" href="css/main.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
         <script src="http://localhost:35729/livereload.js"></script>
     </head>
     <body>
         <div class="main">
-            <section class="nav">
-                <h1>food sense</h1>
-                <nav>
-                    <ul>
-                        <li class="taste"><a href="#tastemakers">Tastemakers</a></li>
-                        <li class="blog"><a href="#blog">Blog</a></li>
-                        <li class="alist"><a href="#alist">The-A-List</a></li>
-                        <li class="contrib"><a href="#contribute">Contribute</a></li>
-                        <li class="about"><a href="#about">About</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <section id="fs-header">
-                <figure>
-                    <img src="assets/photos/cupcakes.jpg" />
-                    <figcaption class="tagline-wrap">
-                        <div class="tagline-1">Shop for the Best</div>
-                        <div class="tagline-2">With our carefully curated vendor list, you'll know what to buy.</div>
-                    </figcaption>
+            <aside class="sidebar">
+                <section class="nav">
+                    <h1>food sense</h1>
+                    <nav>
+                        <ul>
+                            <li class="taste"><a href="#tastemakers">Tastemakers</a></li>
+                            <li class="blog"><a href="#blog">Blog</a></li>
+                            <li class="alist"><a href="#alist">The-A-List</a></li>
+                            <li class="contrib"><a href="#contribute">Contribute</a></li>
+                            <li class="about"><a href="#about">About</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside>
+            <section class="main-content">
+                <section id="fs-header">
+                    <figure>
+                        <img src="assets/photos/cupcakes.jpg" />
+                        <figcaption class="tagline-wrap">
+                            <div class="tagline-1">Shop for the Best</div>
+                            <div class="tagline-2">With our carefully curated vendor list, you'll know what to buy.</div>
+                        </figcaption>
+                    </figure>
                     <ul class="slide-panel">
                         <li>
                             <h1>Tastemakers</h1>
@@ -45,7 +50,18 @@
                             <h2>We want to hear from you!</h2>
                         </li>
                     </ul>
-                </figure>
+                </section>
+                <aside class="subscriber-callout">
+                    <div class="callout-text">
+                        <i class="icon-envelope"></i>
+                        <p>Signup for our newsletter to recieve a handpicked selection of the best stories, recipes and news, delivered weekly to your inbox.</p>
+                    </div>
+                    <form>
+                        <input type="email" placeholder="Email"/>
+                        
+                        <input type="submit" value="Subscribe"/>
+                    </form>
+                </aside>
             </section>
         </div>
     </body>

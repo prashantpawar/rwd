@@ -1,5 +1,6 @@
 @import "_theme.scss";
 @import "compass/reset";
+@import "compass/utilities/general/clearfix";
 
 body {
     font-family: $fonts;
@@ -11,9 +12,13 @@ body {
     margin:0px auto;
 }
 
-.nav {
-    width:15%;
-    float:left;
+.sidebar {
+    width: 15%;
+    float: left;
+}
+.main-content {
+    width: 85%;
+    float: left;
 }
 .nav h1 {
     text-indent:-9999px;
@@ -21,30 +26,33 @@ body {
     width: 120px;
     height: 120px;
 }
+
 #fs-header {
-    position:relative;
-    width:85%;
-    float:left;
+    figure {
+        position: relative;
+        float: right;
+        margin-bottom: -5px;
+        img {
+            max-width: 100%;
+        }
+        .tagline-wrap {
+            position:absolute;
+            top:61%;
+            right:0px;
+            clear:both;
+        }
+        .tagline-1 {
+            background-color:#fff;
+            color:#000;
+            font-style: italic;
+            font-size: 1.3em;
+            padding: 10px;
+            padding: 10px 26px;
+            float:right;
+        }
+    }
 }
-#fs-header img {
-    max-width: 100%;
-    float:right;
-}
-.tagline-wrap {
-    position:absolute;
-    top:61%;
-    right:0px;
-    clear:both;
-}
-.tagline-1 {
-    background-color:#fff;
-    color:#000;
-    font-style: italic;
-    font-size: 1.3em;
-    padding: 10px;
-    padding: 10px 26px;
-    float:right;
-}
+
 #fs-header .tagline-2 {
     clear:both;
     background-color:#000;
@@ -54,7 +62,6 @@ body {
 }
 
 .slide-panel {
-    max-width: 100%;
     li {
         width: 19%;
         padding-left: 3%;
@@ -66,12 +73,88 @@ body {
         float: left;
         color: #8FC9C3;
         h1 {
+            text-shadow: #fff 0 1px 0;
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 1.0em;
         }
         h2 {
+            text-shadow: #fff 0 1px 0;
             font-style: italic;
             font-size: 0.8em;
+        }
+    }
+    @include pie-clearfix;
+    margin-bottom: 10px;
+}
+
+.subscriber-callout {
+    @include pie-clearfix;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-top: dashed 1px gray;
+    border-bottom: dashed 1px gray;
+    .icon-envelope {
+        font-size: 2.0em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    p {
+        text-shadow: #fff 0 1px 0;
+        float: left;
+        font-size: 0.8em;
+        font-style: italic;
+        margin-top: -2.0em;
+        margin-left: 4.0em;
+        margin-right: 1.0em;
+    }
+    .callout-text {
+        float: left;
+        width: 60%;
+    }
+    form {
+        float: right;
+        width: 40%;
+        input[type="email"] {
+            width: 62%;
+            height: 2.0em;
+        }
+        input[type="submit"] {
+            width: 33%;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: #050505;
+            padding: 5px 5px;
+            background: -moz-linear-gradient(
+                    top,
+                    #ffffff 0%,
+                    #ebebeb 50%,
+                    #b5b5b5);
+            background: -webkit-gradient(
+                    linear, left top, left bottom, 
+                    from(#ffffff),
+                    color-stop(0.50, #ebebeb),
+                    to(#b5b5b5));
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            border: 1px solid #949494;
+            -moz-box-shadow:
+                    0px 1px 3px rgba(000,000,000,0.5),
+                    inset 0px 0px 2px rgba(255,255,255,1);
+            -webkit-box-shadow:
+                    0px 1px 3px rgba(000,000,000,0.5),
+                    inset 0px 0px 2px rgba(255,255,255,1);
+            box-shadow:
+                    0px 1px 3px rgba(000,000,000,0.5),
+                    inset 0px 0px 2px rgba(255,255,255,1);
+            text-shadow:
+                    0px -1px 0px rgba(000,000,000,0.2),
+                    0px 1px 0px rgba(255,255,255,1);
         }
     }
 }
@@ -106,10 +189,10 @@ ul {
     }
 }
 @media only screen and (max-width : 960px) {
-    .nav {
+    .sidebar {
         width:100%;
     }
-    #fs-header {
+    .main-content {
         width:100%;     
     }
     .nav h1 {
