@@ -62,6 +62,9 @@ module.exports = function(grunt) {
       compass: {
         files: 'sass/*.scss',
         tasks: ['compass']
+      },
+      html: {
+        files: "index.html"
       }
     }
   });
