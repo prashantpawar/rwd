@@ -1,5 +1,6 @@
 @import "_theme.scss";
 @import "compass/reset";
+@import "compass/css3";
 @import "compass/utilities/general/clearfix";
 
 body {
@@ -72,6 +73,13 @@ body {
         background: #F1F7F7;
         float: left;
         color: #8FC9C3;
+        @include transition(0.5s);
+        @include transition-delay(0.01s);
+        &:hover {
+            background: #DFEEEB;
+            cursor: pointer;
+            @include transition-delay(0s);
+        }
         h1 {
             text-shadow: #fff 0 1px 0;
             font-weight: bold;
@@ -107,7 +115,7 @@ body {
         font-size: 0.8em;
         font-style: italic;
         margin-top: -2.0em;
-        margin-left: 4.0em;
+        margin-left: 4.5em;
         margin-right: 1.0em;
     }
     .callout-text {
